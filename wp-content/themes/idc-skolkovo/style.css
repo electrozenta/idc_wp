@@ -12,3 +12,427 @@ Text Domain: idc-skolkovo
 
 some descriptions and licence text goes here...
 */
+
+/* webfonts */
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,700&subset=latin,cyrillic);
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+p,
+address
+{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+
+
+.row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.navbar-default {
+    background-color: #fff;
+    border-color: #fff;
+}
+
+.navbar-header {
+    margin-left: -15px;
+}
+
+.navbar-default .navbar-collapse {
+    margin-right: -30px;
+}
+
+td:last-child {
+    text-align: right;
+}
+
+@media (max-width: 767px) {
+    .nav-pills>li {
+        float: none;
+    }
+}
+
+.navbar-default .nav-pills > li > a {
+    background-color:#00c0ff;
+    border:1px solid #00c0ff;
+    border-radius:0;
+    color:#fff;
+    font-size:18px;
+    margin:1px 0;
+    padding:8px 25px;
+    white-space: nowrap;
+}
+
+.navbar-default .nav-pills > li > a:hover,
+.navbar-default .nav-pills > .active > a {
+    background:#fff;
+    color:#00c0ff;
+}
+
+.nav-pills > li+li {
+    margin-left: 0;
+}
+
+
+
+
+/* navigation contact section */
+.la-contact {
+    color: #808080;
+}
+
+.la-contact:hover {
+    color: #000000;
+}
+
+.la-contact span.glyphicon {
+    font-size: 32px;
+}
+
+.la-contact > address {
+    display: inline-block;
+    margin: 0 10px 5px 5px;
+    font-size: 16px;
+}
+
+.la-contact > address > a {
+    display: block;
+    font-size: 13px;
+    color: #808080;
+}
+
+.la-contact > address > a:hover {
+    color: #000000;
+}
+
+.la-contact a.la-facebook {
+    background: url(assets/img/facebook.png) no-repeat 0 0;
+    width: 32px;
+    height: 32px;
+    display: inline-block;
+}
+
+.la-contact a.la-facebook:hover {
+    background: url(assets/img/facebook.png) no-repeat 0 -32px;
+}
+
+.la-lang {
+    margin-top: 10px;
+}
+
+.la-lang li > a.navbar-link {
+    color: #808080;
+    font-weight: 700;
+}
+
+.la-lang li.active > a.navbar-link, .la-lang li > a.navbar-link:hover {
+    color: #000000;
+}
+
+
+
+
+
+/* Main */
+.owl-carousel h2 {
+    color: #fff;
+    font-size: 26px;
+    background: #00c0ff;
+    position: absolute;
+    bottom: 10%;
+    right: 0;
+    padding: 10px 50px;
+}
+
+.la-page {
+    min-height: 250px;
+}
+
+.la-page h3 {
+    color: #353434;
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 15px;
+}
+
+main article {
+    margin: 30px 30px 50px;
+}
+
+main article > p {
+    color: #555555;
+    font-size: 20px;
+    text-align: center;
+}
+/* End Main */
+
+
+
+
+main > footer {
+    padding-top: 30px;
+}
+
+main > footer .nav.nav-pills > li > a {
+    background-color: #fff;
+    color: #555;
+    font-size: 14px;
+
+}
+
+main > footer .nav.nav-pills>li.active>a,
+main > footer .nav.nav-pills>li>a:hover {
+    background-color: #fff;
+    color: #00c0ff;
+}
+
+.la-page-header {
+    border-bottom: 15px solid;
+    margin-bottom: 15px;
+    border-color: #00c0ff;
+}
+
+.la-page-nav > li.active > a,
+.la-page-nav > li > a:hover {
+    color: #fff;
+    background-color: #00c0ff;
+}
+
+.la-page-nav > li > a {
+    white-space: nowrap;
+    border: 1px solid #ebebeb;
+    color: #555;
+    font-size: 14px;
+    padding: 5px 15px;
+}
+
+
+
+.la-nav-vertical {
+
+}
+
+/* Doctors section */
+.la-doctor-list h2, h3 {
+    color: #555555;
+    font-size: 22px;
+}
+
+.la-doctor-short {
+    padding: 20px 0;
+    margin: 0;
+    border-bottom: 1px solid #D1D1D1;
+}
+
+.la-doctor-short img {
+    padding: 0 35px 0 0;
+}
+
+.la-doctor-short h4 {
+    margin-top: 0;
+    color: #000;
+    font-size: 20px;
+}
+
+.la-doctor-short h5 {
+    color: #555;
+    font-size: 16px;
+}
+
+.la-doctor-short p {
+    padding: 20px 20px 0 0;
+    color: #8f8e8e;
+    font-size: 16px;
+}
+
+.la-doctor-short a {
+    color: #1daee3;
+    font-size: 16px;
+    display: block;
+    text-align: right;
+}
+
+
+/* Contact */
+.contact {
+    margin-bottom: 15px;
+}
+
+.yandex-map {
+    width: 100%;
+    height: 340px;
+}
+
+/* Footer */
+footer > header h2 {
+    color: #fff;
+    font-size: 21px;
+    font-weight: 500;
+    background: #00c0ff;
+    padding: 4px 15px;
+    margin: 0;
+}
+
+footer footer {
+    padding-bottom: 30px;
+}
+
+.la-dev {
+    margin-top: 20px;
+    color: #8f8e8e;
+    font-weight: 700;
+}
+
+.la-copyright {
+
+}
+/* End Footer */
+
+/* Mobile */
+a.logo
+{
+    background:url(assets/img/logo-sm.png) no-repeat;
+    height:52px;
+    margin:10px 0 10px 15px;
+    padding:0 10px 0 45px;
+}
+
+a.logo h1
+{
+    color:#00c0ff;
+    font-family:Aharoni, sans-serif;
+    font-size:30px;
+    font-weight:500;
+    margin:0;
+    white-space:nowrap;
+}
+
+a.logo h1 > small
+{
+    color:#00c0ff;
+    font-size:15px;
+    text-transform: uppercase;
+    padding-left:5px;
+}
+
+a.logo h2
+{
+    color:#030101;
+    font-size:10px;
+    font-weight:700;
+    text-transform: uppercase;
+    margin:0;
+    white-space:nowrap;
+}
+
+
+a[title="|"] {
+    display: none !important;
+}
+
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+    a.logo
+    {
+        background:url(assets/img/logo-md.png) no-repeat;
+        height:78px;
+        margin-left: 0;
+        padding-left: 68px;
+    }
+
+    a.logo h1
+    {
+        font-size:41px;
+    }
+
+    a.logo h1 > small
+    {
+        font-size:15px;
+        padding-left:4px;
+    }
+
+    a.logo h2
+    {
+        font-size:11px;
+        white-space: normal;
+        width:150px;
+    }
+
+    .navbar-default .nav-pills > li > a {
+        font-size:14px;
+        padding:6px 15px;
+    }
+
+    .nav-pills > li+li {
+        /*margin-left: 1px;*/
+    }
+
+    a[title="|"] {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        border-left-width: 0 !important;
+        border-right-width: 0 !important;
+        cursor: default;
+        pointer-events: none;
+        display: block !important;
+    }
+
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+    .navbar-default .nav-pills > li > a {
+        font-size:14px;
+        padding:6px 21px;
+    }
+
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+    .container {
+        max-width: 990px;
+    }
+
+    a.logo
+    {
+        background:url(assets/img/logo-lg.png) no-repeat;
+        height:104px;
+        padding-left: 90px;
+    }
+
+    a.logo h1
+    {
+        font-size:55px;
+    }
+
+    a.logo h1 > small
+    {
+        font-size:20px;
+        padding-left:5px;
+    }
+
+    a.logo h2
+    {
+        font-size:12px;
+        white-space: normal;
+        width:150px;
+    }
+
+    .navbar-default .nav-pills > li > a {
+        font-size:18px;
+        padding:8px 25px;
+    }
+}
