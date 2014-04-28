@@ -8,7 +8,13 @@ add_action( 'after_setup_theme', 'wp_setup' );
 
 /* Setup function for Theme */
 function wp_setup() {
-    register_nav_menu( 'primary', 'Primary navigation' );
+    register_nav_menu( 'primary', 'Parent header navigation' );
+    register_nav_menu( 'secondary', 'Parent header minor navigation' );
+    register_nav_menu( 'child-header', 'Child header navigation' );
+    register_nav_menu( 'child-footer', 'Child footer navigation' );
+
+    // This theme uses post thumbnails
+    add_theme_support( 'post-thumbnails' );
 }
 
 /* Load Bootstrap CSS styles and scripts */
@@ -44,5 +50,12 @@ function wpt_register_js()
 }
 
 add_action('init', 'wpt_register_js');
+
+
+function icl_load_jquery_ui() {
+    wp_enqueue_script( 'jquery-ui-dialog', false, array('jquery'), false, true );
+}
+
+add_action( 'admin_enqueue_scripts', 'icl_load_jquery_ui' );
 
 ?>

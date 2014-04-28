@@ -127,12 +127,12 @@ td:last-child {
     margin-top: 10px;
 }
 
-.la-lang li > a.navbar-link {
+.la-lang li > a {
     color: #808080;
     font-weight: 700;
 }
 
-.la-lang li.active > a.navbar-link, .la-lang li > a.navbar-link:hover {
+.la-lang li.active > a, .la-lang li > a:hover {
     color: #000000;
 }
 

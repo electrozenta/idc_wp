@@ -61,11 +61,18 @@
                         );
                     ?>
                     <div class="row">
-                        <ul class="list-inline la-lang pull-left">
-                            <li><a class="navbar-link" href="#">Регистрация</a></li>
-                            <li><span>|</span></li>
-                            <li><a class="navbar-link" href="#">Записаться на прием</a></li>
-                        </ul>
+                        <?php
+                        wp_nav_menu( array(
+                                'menu'              => 'secondary',
+                                'theme_location'    => 'secondary',
+                                'depth'             => 0,
+                                'container'         => '',
+                                'container_class'   => '',
+                                'menu_class'        => 'list-inline la-lang pull-left',
+                                'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
+                                'walker'            => new wp_bootstrap_navwalker())
+                        );
+                        ?>
                         <ul class="list-inline la-lang pull-right">
                             <li class="active"><a class="navbar-link" href="#">Рус</a></li>
                             <li><span>|</span></li>
