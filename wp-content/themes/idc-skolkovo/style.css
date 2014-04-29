@@ -436,3 +436,6 @@ a[title="|"] {
         padding:8px 25px;
     }
 }
+
+/*Contact Form 7*/
+.wpcf7-form-control-wrap { display:inline !important; }
