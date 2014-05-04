@@ -83,6 +83,5 @@ Description: The main page
         });
     })(jQuery)
 </script>
-
 <?php get_footer(); ?>
 

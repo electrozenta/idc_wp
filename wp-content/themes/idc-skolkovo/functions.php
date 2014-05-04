@@ -12,9 +12,26 @@ function wp_setup() {
     register_nav_menu( 'secondary', 'Parent header minor navigation' );
     register_nav_menu( 'child-header', 'Child header navigation' );
     register_nav_menu( 'child-footer', 'Child footer navigation' );
+    register_nav_menu( 'educational-program', 'Educational program left menu' );
 
     // This theme uses post thumbnails
     add_theme_support( 'post-thumbnails' );
+
+    //registering widget areas
+
+    if(function_exists('register_sidebar')){
+
+        register_sidebar(array(
+            'name' => 'Footer Menu Widget Area',
+            'id' => 'footer_menu_area',
+            'description' => 'Footer Menu Area',
+            'before_widget' => '<div class="col-xs-6 col-sm-3"><div class="dg-footer-menu">',
+            'after_widget' => '</div></div>',
+            'before_title' => '<h3>',
+            'after_title' => '</h3>',
+        ));
+    }
+
 }
 
 /* Load Bootstrap CSS styles and scripts */
@@ -47,6 +64,10 @@ function wpt_register_js()
     /* Load Owl Carousel Plugin with dependencies in footer*/
     wp_register_script('owl.carousel.min.js', get_template_directory_uri() . '/assets/js/owl.carousel.min.js', array('jquery'), '1.0', true);
     wp_enqueue_script('owl.carousel.min.js');
+
+    /* Load jQuery Event Calendar Plugin with dependencies in footer*/
+    wp_register_script('jquery.eventCalendar.min.js', get_template_directory_uri() . '/assets/js/jquery.eventCalendar.js', array('jquery'), '1.0', true);
+    wp_enqueue_script('jquery.eventCalendar.min.js');
 }
 
 add_action('init', 'wpt_register_js');

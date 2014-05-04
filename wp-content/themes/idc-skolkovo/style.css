@@ -215,13 +215,24 @@ main > footer .nav.nav-pills>li>a:hover {
     border: 1px solid #ebebeb;
     color: #555;
     font-size: 14px;
-    padding: 5px 15px;
+    padding: 5px;
 }
 
 
 
-.la-nav-vertical {
+.la-nav-vertical > li {
+    padding: 6px 0;
+}
 
+.la-nav-vertical > li > a {
+    text-transform: uppercase;
+    color: #333;
+    font-weight: bold;
+}
+
+.la-nav-vertical > li.active > a,
+.la-nav-vertical > li > a:hover {
+    color: #00c0ff;
 }
 
 /* Doctors section */
@@ -233,7 +244,11 @@ main > footer .nav.nav-pills>li>a:hover {
 .la-doctor-short {
     padding: 20px 0;
     margin: 0;
-    border-bottom: 1px solid #D1D1D1;
+
+}
+
+.la-doctor-short + .la-doctor-short {
+    border-top: 1px solid #D1D1D1;
 }
 
 .la-doctor-short img {
@@ -391,6 +406,10 @@ a[title="|"] {
         display: block !important;
     }
 
+    .la-page-nav > li > a {
+        font-size: 12px;
+    }
+
 }
 
 /* Medium devices (desktops, 992px and up) */
@@ -399,6 +418,10 @@ a[title="|"] {
     .navbar-default .nav-pills > li > a {
         font-size:14px;
         padding:6px 21px;
+    }
+
+    .la-page-nav > li > a {
+        font-size: 14px;
     }
 
 }
