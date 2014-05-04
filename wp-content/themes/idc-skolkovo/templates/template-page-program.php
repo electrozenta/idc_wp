@@ -1,7 +1,7 @@
 <?php
 /*
-Template Name: Child page
-Description: Child page template
+Template Name: Educational Program
+Description: Child page for educational program
 */
 
 get_header();

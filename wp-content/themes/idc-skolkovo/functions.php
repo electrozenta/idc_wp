@@ -58,4 +58,48 @@ function icl_load_jquery_ui() {
 
 add_action( 'admin_enqueue_scripts', 'icl_load_jquery_ui' );
 
+
+
+/*
+// Custom post for Doctors Biography
+*/
+function doctor_init() {
+    $labels = array(
+        'name'               => 'Doctors',
+        'singular_name'      => 'Doctor',
+        'add_new'            => 'Add New',
+        'add_new_item'       => 'Add New Doctor',
+        'edit_item'          => 'Edit Doctor',
+        'new_item'           => 'New Doctor',
+        'all_items'          => 'All Doctors',
+        'view_item'          => 'View Doctor',
+        'search_items'       => 'Search Doctors',
+        'not_found'          => 'No doctor found',
+        'not_found_in_trash' => 'No doctors found in Trash',
+        'parent_item_colon'  => '',
+        'menu_name'          => 'Doctors'
+    );
+
+    $args = array(
+        'labels'             => $labels,
+        'public'             => true,
+        'publicly_queryable' => true,
+        'show_ui'            => true,
+        'show_in_menu'       => true,
+        'query_var'          => true,
+        'rewrite'            => array( 'slug' => 'doctor' ),
+        'capability_type'    => 'post',
+        'has_archive'        => true,
+        'hierarchical'       => false,
+        'menu_position'      => null,
+        'supports'           => array( 'title', 'editor', 'thumbnail'),
+        //'taxonomies'         => array( 'category', 'post_tag' )
+    );
+
+    register_post_type( 'doctor', $args );
+}
+add_action( 'init', 'doctor_init' );
+
+
+
 ?>

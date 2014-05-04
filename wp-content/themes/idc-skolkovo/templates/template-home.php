@@ -30,39 +30,31 @@ Description: The main page
         ?>
     </article>
 
-    <div class="row">
+    <div class="row"> <?php
 
-        <?php
+        $pages = $cfs->get('child_pages');
+        if ($pages) :
 
-        $id = $post->ID;
+            foreach ($pages as $page_id) :
+                $page = get_post($page_id);
+                $post_thumbnail_id = get_post_thumbnail_id($page_id);
+                $attachment_url = wp_get_attachment_url($post_thumbnail_id);
+                $alt = get_post_meta($post_thumbnail_id, '_wp_attachment_image_alt', true);
 
-        $pages = get_pages(array(
-            'child_of' => $id,
-            'parent' => $id,
-            'sort_column' => 'menu_order',
-            'sort_order' => 'asc'
-        ));
+                if (has_post_thumbnail($page->ID)) : ?>
+                    <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 la-page">
+                        <a href="<?php echo get_page_link($page->ID); ?>">
+                            <img class="img-responsive" src="<?php echo $attachment_url; ?>"
+                                 alt="<?php if (count($alt)) echo $alt; ?>"/>
 
-        foreach ($pages as $page) {
-            if (has_post_thumbnail($page->ID)) {
-                ?>
-                <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 la-page">
-                    <a href="<?php echo get_page_link($page->ID); ?>">
-                        <img class="img-responsive" src="<?php
-                        $post_thumbnail_id = get_post_thumbnail_id($page->ID);
-                        echo wp_get_attachment_url($post_thumbnail_id); ?>" alt="<?php
-                        $alt = get_post_meta($post_thumbnail_id, '_wp_attachment_image_alt', true);
-                        if (count($alt)) echo $alt;
-                        ?>"/>
+                            <h3><?php echo $page->post_title; ?></h3>
+                        </a>
+                    </div> <?php
+                endif;
 
-                        <h3><?php echo $page->post_title; ?></h3>
-                    </a>
-                </div>
-            <?php
-            }
-        }
+            endforeach;
 
-        ?>
+        endif; ?>
 
     </div>
 </main>

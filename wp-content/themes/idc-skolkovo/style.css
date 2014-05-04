@@ -200,10 +200,14 @@ main > footer .nav.nav-pills>li>a:hover {
     border-color: #00c0ff;
 }
 
-.la-page-nav > li.active > a,
-.la-page-nav > li > a:hover {
+.la-page-nav > li.active > a {
     color: #fff;
     background-color: #00c0ff;
+}
+
+.la-page-nav > li > a:hover {
+    color: #fff;
+    background-color: #808080;
 }
 
 .la-page-nav > li > a {
