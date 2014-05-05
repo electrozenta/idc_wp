@@ -18,7 +18,7 @@
 <body <?php body_class(); ?>>
 <div class="container">
     <!-- Static navbar -->
-    <div class="navbar navbar-default" role="navigation">
+    <div class="navbar navbar-default la-top-nav" role="navigation">
         <div class="container-fluid">
             <div class="col-sm-4">
                 <div class="navbar-header">

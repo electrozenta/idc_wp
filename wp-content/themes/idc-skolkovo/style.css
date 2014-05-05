@@ -41,6 +41,10 @@ address
     border-color: #fff;
 }
 
+.la-top-nav {
+    margin-top: 10px;
+}
+
 .navbar-header {
     margin-left: -15px;
 }
@@ -80,7 +84,16 @@ td:last-child {
     margin-left: 0;
 }
 
+.la-footer-nav > li > a {
+    color: #808080;
+    padding: 5px 10px;
+    display: inline-block;
+}
 
+.la-footer-nav > li.active > a,
+.la-footer-nav > li > a:hover{
+    color: #000000;
+}
 
 
 /* navigation contact section */
@@ -218,7 +231,9 @@ main > footer .nav.nav-pills>li>a:hover {
     padding: 5px;
 }
 
-
+.la-nav-vertical {
+    margin-top: 20px;
+}
 
 .la-nav-vertical > li {
     padding: 6px 0;
