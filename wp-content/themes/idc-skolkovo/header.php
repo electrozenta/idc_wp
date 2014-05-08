@@ -29,12 +29,6 @@
                         <span class="icon-bar"></span>
                     </button>
                     <a href="<?php echo home_url('/'); ?>" title="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>" class="navbar-brand logo" rel="home">
-                        <hgroup>
-                            <h1>IDC
-                                <small>Skolkovo</small>
-                            </h1>
-                            <h2 class="hidden-xs">Международный Стоматологический Центр</h2>
-                        </hgroup>
                     </a>
                 </div>
             </div>

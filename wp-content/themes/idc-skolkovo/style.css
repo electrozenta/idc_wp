@@ -42,7 +42,7 @@ address
 }
 
 .la-top-nav {
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 .navbar-header {
@@ -162,6 +162,7 @@ td:last-child {
     bottom: 10%;
     right: 0;
     padding: 10px 50px;
+    width: 300px;
 }
 
 .la-page {
@@ -214,18 +215,19 @@ main > footer .nav.nav-pills>li>a:hover {
 }
 
 .la-page-nav > li.active > a {
-    color: #fff;
-    background-color: #00c0ff;
+    color: #00c0ff;
+    background-color: #fff;
+    font-weight: bold;
 }
 
 .la-page-nav > li > a:hover {
-    color: #fff;
-    background-color: #808080;
+    border-color: #808080;
+    background-color: #fff;
 }
 
 .la-page-nav > li > a {
     white-space: nowrap;
-    border: 1px solid #ebebeb;
+    /*border: 1px solid #ebebeb;*/
     color: #555;
     font-size: 14px;
     padding: 5px;
@@ -335,38 +337,10 @@ a.logo
 {
     background:url(assets/img/logo-sm.png) no-repeat;
     height:52px;
+    width: 141px;
     margin:10px 0 10px 15px;
     padding:0 10px 0 45px;
 }
-
-a.logo h1
-{
-    color:#00c0ff;
-    font-family:Aharoni, sans-serif;
-    font-size:30px;
-    font-weight:500;
-    margin:0;
-    white-space:nowrap;
-}
-
-a.logo h1 > small
-{
-    color:#00c0ff;
-    font-size:15px;
-    text-transform: uppercase;
-    padding-left:5px;
-}
-
-a.logo h2
-{
-    color:#030101;
-    font-size:10px;
-    font-weight:700;
-    text-transform: uppercase;
-    margin:0;
-    white-space:nowrap;
-}
-
 
 a[title="|"] {
     display: none !important;
@@ -380,26 +354,9 @@ a[title="|"] {
     {
         background:url(assets/img/logo-md.png) no-repeat;
         height:78px;
+        width: 212px;
         margin-left: 0;
         padding-left: 68px;
-    }
-
-    a.logo h1
-    {
-        font-size:41px;
-    }
-
-    a.logo h1 > small
-    {
-        font-size:15px;
-        padding-left:4px;
-    }
-
-    a.logo h2
-    {
-        font-size:11px;
-        white-space: normal;
-        width:150px;
     }
 
     .navbar-default .nav-pills > li > a {
@@ -452,25 +409,8 @@ a[title="|"] {
     {
         background:url(assets/img/logo-lg.png) no-repeat;
         height:104px;
+        width: 283px;
         padding-left: 90px;
-    }
-
-    a.logo h1
-    {
-        font-size:55px;
-    }
-
-    a.logo h1 > small
-    {
-        font-size:20px;
-        padding-left:5px;
-    }
-
-    a.logo h2
-    {
-        font-size:12px;
-        white-space: normal;
-        width:150px;
     }
 
     .navbar-default .nav-pills > li > a {

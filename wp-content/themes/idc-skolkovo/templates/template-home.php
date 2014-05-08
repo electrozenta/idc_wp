@@ -14,7 +14,7 @@ Description: The main page
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/header-1.jpg" alt=""
                      class="img-responsive">
 
-                <h2>Стоматологический Центр</h2>
+                <h2>Клиника</h2>
             </div>
             <div class="item">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/header-2.jpg" alt=""
