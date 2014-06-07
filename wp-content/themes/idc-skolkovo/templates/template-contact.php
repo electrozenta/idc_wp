@@ -20,3 +20,4 @@ get_header();
 <?php
 get_template_part('/templates/template-part-footer');
 get_footer();
+?>

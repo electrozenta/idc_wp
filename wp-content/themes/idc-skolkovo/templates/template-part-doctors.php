@@ -11,11 +11,11 @@ if ($values) :
         $toggle_id = "more-" . $post_id;
         ?>
         <div class="row la-doctor-short">
-            <div class="col-sm-3">
+            <div class="col-sm-3 no-gutter-left">
                 <img class="img-responsive" src="<?php echo $attachment_url; ?>"
                      alt="<?php if (count($alt)) echo $alt; ?>"/>
             </div>
-            <div class="col-sm-9">
+            <div class="col-sm-9 no-gutter-right">
                 <h4><?php echo $the_post->post_title; ?></h4>
                 <h5><?php echo $cfs->get('doc_title', $post_id); ?></h5>
                 <p><?php echo $cfs->get('doc_summary', $post_id); ?></p>

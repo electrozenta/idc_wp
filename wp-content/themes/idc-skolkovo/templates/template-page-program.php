@@ -14,7 +14,7 @@ get_template_part('/templates/template-part-header');
 
 ?>
     <div class="row">
-        <div class="col-sm-3">
+        <div class="col-sm-3 no-gutter-left">
             <?php
             wp_nav_menu(array(
                     'menu' => 'educational-program',
@@ -28,7 +28,7 @@ get_template_part('/templates/template-part-header');
             );
             ?>
         </div>
-        <div class="col-sm-9">
+        <div class="col-sm-9 no-gutter-right">
             <?php get_template_part('/templates/template-part-content'); ?>
             <?php if($cfs->get('hide_calendar') == 0) : ?>
             <div class="row">
@@ -37,10 +37,8 @@ get_template_part('/templates/template-part-header');
                         <img class="img-responsive text-center" src="<?php echo get_template_directory_uri();?>/assets/img/educational_programs.jpg" alt=""/>
                     </a>
                 </div>
-                <div class="col-sm-8">
-<!--                    <img class="responsive" src="--><?php //echo get_template_directory_uri();?><!--/assets/img/calendar.png" alt=""/>-->
+                <div class="col-sm-8 no-gutter">
                     <div id="eventCalendarDefault"></div>
-                    <?php //echo do_shortcode('[em-full-calendar]'); ?>
                 </div>
             </div>
             <?php endif; ?>
@@ -70,7 +68,8 @@ get_template_part('/templates/template-part-footer');
                     txt_NextEvents: "Образавательные программы:",
                     txt_GoToEventUrl: "посмотреть трейнинг",
                     showDescription: true,
-                    openEventInNewWindow: true
+                    openEventInNewWindow: true,
+                    jsonDateFormat: 'human'
                 });
 
             });

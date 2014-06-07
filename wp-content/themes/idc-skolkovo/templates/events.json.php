@@ -1,7 +1,10 @@
 <?php
+include '../../../../wp-load.php';
+
+
 header('Content-type: text/json');
 echo '[';
-$separator = "";
+/*$separator = "";
 $days = 16;
 	echo '	{ "date": "1314579600000", "type": "meeting", "title": "Test Last Year", "description": "Lorem Ipsum dolor set", "url": "http://www.event3.com/" },';
 	echo '	{ "date": "1377738000000", "type": "meeting", "title": "Test Next Year", "description": "Lorem Ipsum dolor set", "url": "http://www.event3.com/" },';
@@ -21,6 +24,41 @@ for ($i = 1 ; $i < $days; $i= 1 + $i * 2) {
 	echo '	{ "date": "'; echo $initTime-7200000-2592000000; echo '", "type": "meeting", "title": "Test Project '; echo $i; echo ' Brainstorming", "description": "Lorem Ipsum dolor set", "url": "http://www.event10.com/" },';
 	echo '	{ "date": "'; echo $initTime+10800000-2592000000; echo '", "type": "test", "title": "A very very long name for a f*cking project '; echo $i; echo ' events", "description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam.", "url": "http://www.event11.com/" }';
 	$separator = ",";
+}*/
+
+
+$separator = "";
+// WP_Query arguments
+$args = array (
+    'post_type'              => 'training',
+    'post_status'            => 'publish',
+    'pagination'             => false,
+    'orderby'                => 'none',
+);
+
+// The Query
+$query = new WP_Query( $args );
+
+// The Loop
+if ( $query->have_posts() ) {
+    while ( $query->have_posts() ) {
+        $query->the_post();
+
+        $date = ($cfs->get('training_date')); //YYYY-MM-DD
+        $time = $cfs->get('training_time'); //hh:mm
+        $human = $date.' '.$time.':00';
+        $title = $post->post_title;
+        $description = $post->post_content;
+
+        echo $separator.'{ "date": "'.$human.'", "type": "", "title": "'.$title.'", "description": "'.$description.'", "url": "" }';
+
+        $separator = ",";
+    }
+} else {
+    // no posts found
 }
+
+// Restore original Post Data
+wp_reset_postdata();
 echo ']';
 ?>

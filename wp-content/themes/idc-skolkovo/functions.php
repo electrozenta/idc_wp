@@ -113,6 +113,7 @@ function doctor_init() {
         'has_archive'        => true,
         'hierarchical'       => false,
         'menu_position'      => null,
+        'menu_icon'          => 'dashicons-id',
         'supports'           => array( 'title', 'editor', 'thumbnail'),
         //'taxonomies'         => array( 'category', 'post_tag' )
     );
@@ -122,5 +123,45 @@ function doctor_init() {
 add_action( 'init', 'doctor_init' );
 
 
+/*
+// Custom post for Trainigs
+*/
+function training_init() {
+    $labels = array(
+        'name'               => 'Trainings',
+        'singular_name'      => 'Training',
+        'add_new'            => 'Add New',
+        'add_new_item'       => 'Add New Training',
+        'edit_item'          => 'Edit Training',
+        'new_item'           => 'New Training',
+        'all_items'          => 'All Trainings',
+        'view_item'          => 'View Training',
+        'search_items'       => 'Search Trainings',
+        'not_found'          => 'No training found',
+        'not_found_in_trash' => 'No trainings found in Trash',
+        'parent_item_colon'  => '',
+        'menu_name'          => 'Trainings'
+    );
+
+    $args = array(
+        'labels'             => $labels,
+        'public'             => true,
+        'publicly_queryable' => true,
+        'show_ui'            => true,
+        'show_in_menu'       => true,
+        'query_var'          => true,
+        'rewrite'            => array( 'slug' => 'training' ),
+        'capability_type'    => 'post',
+        'has_archive'        => true,
+        'hierarchical'       => false,
+        'menu_position'      => null,
+        'menu_icon'          => 'dashicons-welcome-learn-more',
+        'supports'           => array( 'title', 'editor'),
+        //'taxonomies'         => array( 'category', 'post_tag' )
+    );
+
+    register_post_type( 'training', $args );
+}
+add_action( 'init', 'training_init' );
 
 ?>

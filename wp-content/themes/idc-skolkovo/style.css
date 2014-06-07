@@ -36,6 +36,19 @@ address
     margin-right: 0;
 }
 
+.no-gutter-left {
+    padding-left: 0;
+}
+
+.no-gutter-right {
+    padding-right: 0;
+}
+
+.no-gutter {
+    padding-left: 0;
+    padding-right: 0;
+}
+
 .navbar-default {
     background-color: #fff;
     border-color: #fff;
@@ -269,7 +282,7 @@ main > footer .nav.nav-pills>li>a:hover {
 }
 
 .la-doctor-short img {
-    padding: 0 35px 0 0;
+    padding-bottom: 15px;
 }
 
 .la-doctor-short h4 {
@@ -416,3 +429,8 @@ a[title="|"] {
 
 /*Contact Form 7*/
 .wpcf7-form-control-wrap { display:inline !important; }
+
+/*Event Calendar*/
+.eventCalendar-wrap {
+    box-shadow: none !important;
+}
