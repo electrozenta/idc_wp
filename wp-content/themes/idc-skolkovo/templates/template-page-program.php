@@ -14,21 +14,22 @@ get_template_part('/templates/template-part-header');
 
 ?>
     <div class="row">
-        <div class="col-sm-3 no-gutter-left">
+        <div class="col-sm-4 no-gutter-left">
             <?php
             wp_nav_menu(array(
                     'menu' => 'educational-program',
                     'theme_location' => 'educational-program',
                     'depth' => 0,
-                    'container' => '',
-                    'container_class' => '',
+                    'container' => 'div',
+                    'container_class' => 'la-nav-skew',
                     'menu_class' => 'list-unstyled la-nav-vertical',
                     'fallback_cb' => 'wp_bootstrap_navwalker::fallback',
                     'walker' => new wp_bootstrap_navwalker())
             );
             ?>
+            <button type="button" class="btn btn-block btn-info">Записаться на прием</button>
         </div>
-        <div class="col-sm-9 no-gutter-right">
+        <div class="col-sm-8 no-gutter-right">
             <?php get_template_part('/templates/template-part-content'); ?>
             <?php if($cfs->get('hide_calendar') == 0) : ?>
             <div class="row">
