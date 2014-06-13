@@ -13,6 +13,7 @@ function wp_setup() {
     register_nav_menu( 'child-header', 'Child header navigation' );
     register_nav_menu( 'child-footer', 'Child footer navigation' );
     register_nav_menu( 'educational-program', 'Educational program left menu' );
+    register_nav_menu( 'price-service', 'Price and service left menu' );
 
     // This theme uses post thumbnails
     add_theme_support( 'post-thumbnails' );
