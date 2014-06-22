@@ -26,7 +26,7 @@ get_template_part('/templates/template-part-header');
             ?>
             <button type="button" class="btn btn-block btn-info">Записаться на прием</button>
         </div>
-        <div class="col-sm-8 no-gutter-right">
+        <div class="col-sm-8 no-gutter-right services-list" >
             <?php get_template_part('/templates/template-part-content'); ?>
         </div>
     </div>

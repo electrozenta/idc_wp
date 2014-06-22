@@ -5,16 +5,13 @@
         </div>
     </header>
     <main>
-        <div class="row">
-            <img src="<?php echo get_template_directory_uri();?>/assets/img/partner-1.jpg" alt="">
-            <img src="<?php echo get_template_directory_uri();?>/assets/img/partner-2.jpg" alt="">
-            <img src="<?php echo get_template_directory_uri();?>/assets/img/partner-3.jpg" alt="">
-            <img src="<?php echo get_template_directory_uri();?>/assets/img/partner-4.jpg" alt="">
-            <img src="<?php echo get_template_directory_uri();?>/assets/img/partner-5.jpg" alt="">
-            <img src="<?php echo get_template_directory_uri();?>/assets/img/partner-6.jpg" alt="">
+        <div class="row la-partners">
+            <img src="<?php echo get_template_directory_uri();?>/assets/img/p1.jpg" class="la-partner" alt="">
+            <img src="<?php echo get_template_directory_uri();?>/assets/img/p2.jpg" class="la-partner" alt="">
+            <img src="<?php echo get_template_directory_uri();?>/assets/img/p3.jpg" class="la-partner" alt="">
+            <img src="<?php echo get_template_directory_uri();?>/assets/img/p4.png" class="la-partner" alt="">
         </div>
     </main>
-    <hr>
     <footer>
         <div class="row">
             <div class="col-sm-6">

@@ -28,43 +28,46 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a href="<?php echo home_url('/'); ?>" title="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>" class="navbar-brand logo" rel="home">
+                    <a href="<?php echo home_url('/'); ?>"
+                       title="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>" class="navbar-brand logo"
+                       rel="home">
                     </a>
                 </div>
             </div>
 
-            <div class="col-sm-8">
-                <div class="navbar-collapse collapse">
+            <div class="col-sm-8 no-gutter">
+                <div class="navbar-collapse collapse no-gutter">
                     <div class="row">
-                        <div class="row la-contact pull-right">
-                            <span class="glyphicon glyphicon-earphone"></span>
-                            <address><a href="mailto:info@idc-skolkovo.ru">info@idc-skolkovo.ru</a>+7(495) 797-47-37</address>
-                            <a href="#" class="la-facebook"></a>
+                        <a href="http://wp.idc-skolkovo.ru/" class="la-home pull-left"></a>
+                        <a href="#" class="la-facebook pull-right"></a>
+                        <div class="la-contact pull-right">
+                            <a href="mailto:idc@idc-skolkovo.ru" class="la-email">idc@idc-skolkovo.ru</a>
+                            <address class="la-phone">+7(495) 797-47-37</address>
                         </div>
                     </div>
                     <?php
-                        wp_nav_menu( array(
-                                'menu'              => 'primary',
-                                'theme_location'    => 'primary',
-                                'depth'             => 2,
-                                'container'         => 'div',
-                                'container_class'   => 'row',
-                                'menu_class'        => 'nav navbar-nav',
-                                'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
-                                'walker'            => new wp_bootstrap_navwalker())
-                        );
+                    wp_nav_menu(array(
+                            'menu' => 'primary',
+                            'theme_location' => 'primary',
+                            'depth' => 2,
+                            'container' => 'div',
+                            'container_class' => 'row',
+                            'menu_class' => 'nav navbar-nav',
+                            'fallback_cb' => 'wp_bootstrap_navwalker::fallback',
+                            'walker' => new wp_bootstrap_navwalker())
+                    );
                     ?>
                     <div class="row">
                         <?php
-                        wp_nav_menu( array(
-                                'menu'              => 'secondary',
-                                'theme_location'    => 'secondary',
-                                'depth'             => 0,
-                                'container'         => '',
-                                'container_class'   => '',
-                                'menu_class'        => 'list-inline la-lang pull-left',
-                                'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
-                                'walker'            => new wp_bootstrap_navwalker())
+                        wp_nav_menu(array(
+                                'menu' => 'secondary',
+                                'theme_location' => 'secondary',
+                                'depth' => 0,
+                                'container' => '',
+                                'container_class' => '',
+                                'menu_class' => 'list-inline la-lang pull-left',
+                                'fallback_cb' => 'wp_bootstrap_navwalker::fallback',
+                                'walker' => new wp_bootstrap_navwalker())
                         );
                         ?>
                         <ul class="list-inline la-lang pull-right">

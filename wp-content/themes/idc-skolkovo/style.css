@@ -12,7 +12,6 @@ Text Domain: idc-skolkovo
 
 some descriptions and licence text goes here...
 */
-
 /* webfonts */
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,100,700&subset=latin,cyrillic);
 
@@ -24,12 +23,10 @@ h5,
 h6,
 a,
 p,
-address
-{
+address {
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
 }
-
 
 .row {
     margin-left: 0;
@@ -54,6 +51,14 @@ address
     border-color: #fff;
 }
 
+.navbar-nav {
+    margin: 0;
+}
+
+.navbar-collapse.in {
+    overflow-y: hidden;
+}
+
 .la-top-nav {
     margin-top: 20px;
 }
@@ -63,7 +68,7 @@ address
 }
 
 .navbar-default .navbar-collapse {
-    margin-right: -30px;
+
 }
 
 td:last-child {
@@ -71,7 +76,7 @@ td:last-child {
 }
 
 @media (max-width: 767px) {
-    .navbar-nav>li {
+    .navbar-nav > li {
         float: none;
     }
 }
@@ -90,49 +95,52 @@ td:last-child {
 }
 
 .navbar-default .navbar-nav > li > a {
-    background-color:#00c0ff;
-    border:1px solid #00c0ff;
-    border-radius:0;
-    color:#ffffff;
-    font-size:18px;
-    margin:1px 0;
-    padding:8px 25px;
+    background-color: #00c0ff;
+    border: 1px solid #00c0ff;
+    border-radius: 0;
+    color: #ffffff;
+    font-size: 18px;
+    margin: 1px 0;
+    padding: 8px 25px;
     white-space: nowrap;
 }
 
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
-.navbar-default .navbar-nav>.open>a,
-.navbar-default .navbar-nav>.open>a:hover,
-.navbar-default .navbar-nav>.open>a:focus {
-    background:#fff;
-    color:#00c0ff;
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+    background: #fff;
+    color: #00c0ff;
 }
-
-
 
 .navbar-default .dropdown-menu > li > a {
     background-color: #ffffff;
-    border:1px solid #00c0ff;
-    border-radius:0;
-    color:#00c0ff;
-    font-size:18px;
-    padding:8px 25px;
+    border: 1px solid #00c0ff;
+    border-radius: 0;
+    color: #00c0ff;
+    font-size: 18px;
+    padding: 8px 25px;
     white-space: nowrap;
 }
 
-.navbar-default .dropdown-menu > li > a:hover,
-.navbar-default .dropdown-menu > li.active > a{
-    background-color:#00c0ff;
-    color:#ffffff;
-}
-
-.navbar-default .dropdown-menu > li > a +  {
+.navbar-default .dropdown-menu > li:nth-child(even) > a {
+    border-top: none;
     border-bottom: none;
 }
 
-.navbar-nav > li+li {
+.navbar-default .dropdown-menu > li > a:hover,
+.navbar-default .dropdown-menu > li.active > a {
+    background-color: #00c0ff;
+    color: #ffffff;
+}
+
+.navbar-default .dropdown-menu > li > a + {
+    border-bottom: none;
+}
+
+.navbar-nav > li + li {
     margin-left: 0;
 }
 
@@ -143,7 +151,7 @@ td:last-child {
 }
 
 .la-footer-nav > li.active > a,
-.la-footer-nav > li > a:hover{
+.la-footer-nav > li > a:hover {
     color: #000000;
 }
 
@@ -155,42 +163,50 @@ td:last-child {
 
 /* navigation contact section */
 .la-contact {
-    color: #808080;
+    margin-bottom: 5px;
 }
 
-.la-contact:hover {
-    color: #000000;
-}
-
-.la-contact span.glyphicon {
-    font-size: 32px;
-}
-
-.la-contact > address {
-    display: inline-block;
-    margin: 0 10px 5px 5px;
-    font-size: 16px;
-}
-
-.la-contact > address > a {
-    display: block;
-    font-size: 13px;
-    color: #808080;
-}
-
-.la-contact > address > a:hover {
-    color: #000000;
-}
-
-.la-contact a.la-facebook {
+.la-facebook {
     background: url(assets/img/facebook.png) no-repeat 0 0;
     width: 32px;
     height: 32px;
+    margin: 5px 2px 0 15px;
     display: inline-block;
 }
 
-.la-contact a.la-facebook:hover {
+.la-facebook:hover {
     background: url(assets/img/facebook.png) no-repeat 0 -32px;
+}
+
+.la-home {
+    background: url(assets/img/home-icon.png);
+    width: 32px;
+    height: 32px;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.la-email {
+    background: url(assets/img/email_icon.png) no-repeat 0;
+    width: 20px;
+    height: 15px;
+    padding-left: 30px;
+    color: #808080;
+}
+
+.la-email:hover {
+    color: #000000;
+}
+
+.la-phone {
+    background: url(assets/img/phone_icon.png) no-repeat 0;
+    width: 21px;
+    height: 21px;
+    padding-left: 30px;
+    margin: 0;
+    font-size: 16px;
+    color: #808080;
+    white-space: nowrap;
 }
 
 .la-lang {
@@ -205,10 +221,6 @@ td:last-child {
 .la-lang li.active > a, .la-lang li > a:hover {
     color: #000000;
 }
-
-
-
-
 
 /* Main */
 .owl-carousel h2 {
@@ -243,10 +255,8 @@ main article > p {
     font-size: 20px;
     text-align: center;
 }
+
 /* End Main */
-
-
-
 
 main > footer {
     padding-top: 30px;
@@ -259,8 +269,8 @@ main > footer .nav.navbar-nav > li > a {
 
 }
 
-main > footer .nav.navbar-nav>li.active>a,
-main > footer .nav.navbar-nav>li>a:hover {
+main > footer .nav.navbar-nav > li.active > a,
+main > footer .nav.navbar-nav > li > a:hover {
     background-color: #fff;
     color: #00c0ff;
 }
@@ -378,7 +388,6 @@ main > footer .nav.navbar-nav>li>a:hover {
     text-align: right;
 }
 
-
 /* Contact */
 .contact {
     margin-bottom: 15px;
@@ -396,6 +405,8 @@ footer > header h2 {
 
 footer footer {
     padding-bottom: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
 }
 
 .la-dev {
@@ -407,32 +418,38 @@ footer footer {
 .la-copyright {
 
 }
+
+.la-partners {
+    text-align: center;
+}
+
+.la-partner {
+    margin: 15px;
+}
+
 /* End Footer */
 
 /* Mobile */
-a.logo
-{
-    background:url(assets/img/logo.png) no-repeat;
+a.logo {
+    background: url(assets/img/logo.png) no-repeat;
     background-size: contain;
-    height:52px;
+    height: 52px;
     width: 141px;
-    margin:10px 0 10px 15px;
-    padding:0 10px 0 45px;
+    margin: 10px 0 10px 15px;
+    padding: 0 10px 0 45px;
 }
 
 a[title="|"] {
     display: none !important;
 }
 
-
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
 
-    a.logo
-    {
-        background:url(assets/img/logo.png) no-repeat;
+    a.logo {
+        background: url(assets/img/logo.png) no-repeat;
         background-size: contain;
-        height:78px;
+        height: 78px;
         width: 212px;
         margin-left: 0;
         padding-left: 68px;
@@ -440,11 +457,11 @@ a[title="|"] {
 
     .navbar-default .navbar-nav > li > a,
     .navbar-default .dropdown-menu > li > a {
-        font-size:14px;
-        padding:6px 15px;
+        font-size: 13px;
+        padding: 6px 15px;
     }
 
-    .navbar-nav > li+li {
+    .navbar-nav > li + li {
         /*margin-left: 1px;*/
     }
 
@@ -469,8 +486,8 @@ a[title="|"] {
 
     .navbar-default .navbar-nav > li > a,
     .navbar-default .dropdown-menu > li > a {
-        font-size:14px;
-        padding:6px 21px;
+        font-size: 14px;
+        padding: 6px 21px;
     }
 
     .la-page-nav > li > a {
@@ -486,8 +503,7 @@ a[title="|"] {
         max-width: 990px;
     }
 
-    a.logo
-    {
+    a.logo {
         background: url(assets/img/logo.png) no-repeat;
         background-size: contain;
         height: 104px;
@@ -497,15 +513,38 @@ a[title="|"] {
 
     .navbar-default .navbar-nav > li > a,
     .navbar-default .dropdown-menu > li > a {
-        font-size:18px;
-        padding:8px 25px;
+        font-size: 16px;
+        padding: 8px 25px;
     }
 }
 
 /*Contact Form 7*/
-.wpcf7-form-control-wrap { display:inline !important; }
+.wpcf7-form-control-wrap {
+    display: inline !important;
+}
 
 /*Event Calendar*/
 .eventCalendar-wrap {
     box-shadow: none !important;
+}
+
+/*pullout form*/
+.pullout-button span, .pullout-button .icon {
+    -webkit-transform: rotate(180deg);
+}
+
+.pullout-button .icon {
+    float: left;
+}
+
+.services-list ul li {
+    background: url(assets/img/list-bullet.png) no-repeat 0 6px;
+    list-style: none;
+    padding-left: 45px;
+    margin-bottom: 10px;
+    min-height: 36px;
+}
+
+.priyom_btn:hover {
+    text-decoration: none !important;
 }
