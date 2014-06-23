@@ -38,11 +38,11 @@
             <div class="col-sm-8 no-gutter">
                 <div class="navbar-collapse collapse no-gutter">
                     <div class="row">
-                        <a href="http://wp.idc-skolkovo.ru/" class="la-home pull-left"></a>
+                        <a href="<?php echo home_url('/'); ?>" class="la-home pull-left"></a>
                         <a href="#" class="la-facebook pull-right"></a>
                         <div class="la-contact pull-right">
-                            <a href="mailto:idc@idc-skolkovo.ru" class="la-email">idc@idc-skolkovo.ru</a>
                             <address class="la-phone">+7(495) 797-47-37</address>
+                            <a href="mailto:idc@idc-skolkovo.ru" class="la-email">idc@idc-skolkovo.ru</a>
                         </div>
                     </div>
                     <?php

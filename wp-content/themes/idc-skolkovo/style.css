@@ -182,7 +182,7 @@ td:last-child {
     background: url(assets/img/home-icon.png);
     width: 32px;
     height: 32px;
-    margin-top: 10px;
+    margin-top: 5px;
     display: inline-block;
 }
 
@@ -425,6 +425,7 @@ footer footer {
 
 .la-partner {
     margin: 15px;
+    display: inline-block;
 }
 
 /* End Footer */
