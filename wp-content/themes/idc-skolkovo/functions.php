@@ -18,6 +18,8 @@ function wp_setup() {
     // This theme uses post thumbnails
     add_theme_support( 'post-thumbnails' );
 
+    add_image_size( 'doctor thumbnail', 169, 166, array( 'center', 'top' ) );
+
     //registering widget areas
 
     if(function_exists('register_sidebar')){
@@ -164,5 +166,24 @@ function training_init() {
     register_post_type( 'training', $args );
 }
 add_action( 'init', 'training_init' );
+
+
+//WPML switcher
+function wpml_lang_list(){
+    $languages = icl_get_languages('skip_missing=0');
+    if(!empty($languages)){
+        echo '<ul class="list-inline la-lang pull-right">';
+        $sep = "";
+        foreach($languages as $l){
+            echo $sep.'<li class="navbar-link">';
+            if(!$l['active']) echo '<a href="'.$l['url'].'">';
+            echo $l['language_code'];
+            if(!$l['active']) echo '</a>';
+            echo '</li>';
+            $sep = '<li><span>|</span></li>';
+        }
+        echo '</ul>';
+    }
+}
 
 ?>

@@ -424,8 +424,21 @@ footer footer {
 }
 
 .la-partner {
-    margin: 15px;
+    margin: 20px;
     display: inline-block;
+    width: 190px;
+}
+
+.la-partner p {
+    margin-top: 20px;
+    color: #808080;
+    font-size: 14px;
+}
+
+.la-partner p {
+    margin-top: 20px;
+    color: #808080;
+    font-size: 14px;
 }
 
 /* End Footer */
@@ -527,6 +540,15 @@ a[title="|"] {
 /*Event Calendar*/
 .eventCalendar-wrap {
     box-shadow: none !important;
+}
+
+.eventsCalendar-daysList li.current a {
+    background-color: #00c0ff !important;
+}
+
+.eventsCalendar-currentTitle {
+    background-color: #00c0ff !important;
+    outline-color: #00c0ff !important;
 }
 
 /*pullout form*/

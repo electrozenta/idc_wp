@@ -6,14 +6,16 @@ if ($values) :
     foreach ($values as $post_id) :
         $the_post = get_post($post_id);
         $post_thumbnail_id = get_post_thumbnail_id($post_id);
-        $attachment_url = $post_thumbnail_id ? wp_get_attachment_url($post_thumbnail_id) : get_template_directory_uri() . "/assets/img/doctor.jpg";
+
+        $attachment_src = wp_get_attachment_image_src( $post_thumbnail_id, 'doctor thumbnail', false );
+
+        $attachment_url = $post_thumbnail_id ? $attachment_src[0] : get_template_directory_uri() . "/assets/img/doctor.jpg";
         $alt = get_post_meta($post_thumbnail_id, '_wp_attachment_image_alt', true);
         $toggle_id = "more-" . $post_id;
         ?>
         <div class="row la-doctor-short">
             <div class="col-sm-3 no-gutter-left">
-                <img class="img-responsive" src="<?php echo $attachment_url; ?>"
-                     alt="<?php if (count($alt)) echo $alt; ?>"/>
+                <img class="img-responsive" src="<?php echo $attachment_url; ?>" alt="<?php if (count($alt)) echo $alt; ?>"/>
             </div>
             <div class="col-sm-9 no-gutter-right">
                 <h4><?php echo $the_post->post_title; ?></h4>

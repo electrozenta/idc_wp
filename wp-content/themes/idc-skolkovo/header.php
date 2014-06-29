@@ -69,12 +69,9 @@
                                 'fallback_cb' => 'wp_bootstrap_navwalker::fallback',
                                 'walker' => new wp_bootstrap_navwalker())
                         );
+
+                        wpml_lang_list();
                         ?>
-                        <ul class="list-inline la-lang pull-right">
-                            <li class="active"><a class="navbar-link" href="#">Рус</a></li>
-                            <li><span>|</span></li>
-                            <li><a class="navbar-link" href="#">Eng</a></li>
-                        </ul>
                     </div>
                 </div>
                 <!--/.nav-collapse -->
