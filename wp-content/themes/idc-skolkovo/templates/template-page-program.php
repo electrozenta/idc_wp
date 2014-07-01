@@ -37,6 +37,7 @@ get_template_part('/templates/template-part-header');
                     <a href="#">
                         <img class="img-responsive text-center" src="<?php echo get_template_directory_uri();?>/assets/img/educational_programs.jpg" alt=""/>
                     </a>
+                    <?php echo do_shortcode('[contact-form-7 id="355" title="Скачать"]'); ?>
                 </div>
                 <div class="col-sm-8 no-gutter">
                     <div id="eventCalendarDefault"></div>
