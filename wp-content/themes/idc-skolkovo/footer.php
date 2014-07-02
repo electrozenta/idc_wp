@@ -21,11 +21,11 @@
 <!--                <p>Italian Academy of Esthetic Dentistry</p>-->
                 <p>Итальянский Академия Эстетической Стоматологии</p>
             </a>
-            <a href="http://www.thechildrenforpeace.org" rel="external" target="_blank" class="la-partner" title="The Children for Peace Onlus">
-                <img src="<?php echo get_template_directory_uri();?>/assets/img/p4.png" alt="The Children for Peace Onlus">
-<!--                <p>The Children for Peace Onlus</p>-->
-                <p>Дети за Mир Онлус</p>
-            </a>
+<!--            <a href="http://www.thechildrenforpeace.org" rel="external" target="_blank" class="la-partner" title="The Children for Peace Onlus">-->
+<!--                <img src="--><?php //echo get_template_directory_uri();?><!--/assets/img/p4.png" alt="The Children for Peace Onlus">-->
+<!--                <p>The Children for Peace Onlus</p>
+<!--                <p>Дети за Mир Онлус</p>-->
+<!--            </a>-->
         </div>
     </main>
     <footer>

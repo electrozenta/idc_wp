@@ -123,6 +123,7 @@ td:last-child {
     font-size: 18px;
     padding: 8px 25px;
     white-space: nowrap;
+    text-align: left;
 }
 
 .navbar-default .dropdown-menu > li:nth-child(even) > a {
@@ -194,7 +195,9 @@ td:last-child {
     color: #808080;
 }
 
-.la-email:hover {
+.la-phone:hover,
+.la-email:hover
+{
     color: #000000;
 }
 
@@ -426,7 +429,7 @@ footer footer {
 .la-partner {
     margin: 20px;
     display: inline-block;
-    width: 190px;
+    max-width: 250px;
 }
 
 .la-partner p {
