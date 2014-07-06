@@ -168,6 +168,47 @@ function training_init() {
 add_action( 'init', 'training_init' );
 
 
+/*
+// Custom post for Partners
+*/
+function partners_init() {
+    $labels = array(
+        'name'               => 'Partners',
+        'singular_name'      => 'Partner',
+        'add_new'            => 'Add New',
+        'add_new_item'       => 'Add New Partner',
+        'edit_item'          => 'Edit Partner',
+        'new_item'           => 'New Partner',
+        'all_items'          => 'All Partners',
+        'view_item'          => 'View Partner',
+        'search_items'       => 'Search Partners',
+        'not_found'          => 'No partner found',
+        'not_found_in_trash' => 'No partners found in Trash',
+        'parent_item_colon'  => '',
+        'menu_name'          => 'Partners'
+    );
+
+    $args = array(
+        'labels'             => $labels,
+        'public'             => true,
+        'publicly_queryable' => true,
+        'show_ui'            => true,
+        'show_in_menu'       => true,
+        'query_var'          => true,
+        'rewrite'            => array( 'slug' => 'partner' ),
+        'capability_type'    => 'post',
+        'has_archive'        => true,
+        'hierarchical'       => false,
+        'menu_position'      => null,
+        'menu_icon'          => 'dashicons-awards',
+        'supports'           => array( 'title', 'thumbnail'),
+        //'taxonomies'         => array( 'category', 'post_tag' )
+    );
+
+    register_post_type( 'partner', $args );
+}
+add_action( 'init', 'partners_init' );
+
 //WPML switcher
 function wpml_lang_list(){
     $languages = icl_get_languages('skip_missing=0');
