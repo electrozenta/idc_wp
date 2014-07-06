@@ -76,6 +76,10 @@ get_template_part('/templates/template-part-footer');
 
             });
         })(jQuery)
+
+        function download() {
+            window.location = "<?php echo $cfs->get('download_url'); ?>";
+        }
     </script>
 <?php
 get_footer();

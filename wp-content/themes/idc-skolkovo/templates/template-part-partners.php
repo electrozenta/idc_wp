@@ -27,7 +27,3 @@
     ?>
 
 </div>
-
-<script>
-    var url = "http://google.com";
-</script>
