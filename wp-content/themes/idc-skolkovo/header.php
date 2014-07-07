@@ -42,7 +42,7 @@
                         <a href="#" class="la-facebook pull-right"></a>
                         <div class="la-contact pull-right">
                             <address class="la-phone">+7(495) 545-54-05</address>
-                            <a href="mailto:idc@idc-skolkovo.ru" class="la-email">idc@idc-skolkovo.ru</a>
+                            <a href="mailto:idc@idc-skolkovo.com" class="la-email">idc@idc-skolkovo.com</a>
                         </div>
                     </div>
                     <?php

@@ -27,7 +27,7 @@ get_template_part('/templates/template-part-header');
                     'walker' => new wp_bootstrap_navwalker())
             );
             ?>
-            <a href="http://wp.idc-skolkovo.ru/записаться-на-прием/" class="priyom_btn"><button type="button" class="btn btn-block btn-info">Записаться на прием</button></a>
+            <a href="http://wp.idc-skolkovo.ru/Регистрация на образовательные программы/" class="priyom_btn"><button type="button" class="btn btn-block btn-info">Регистрация на образовательные программы</button></a>
         </div>
         <div class="col-sm-8 no-gutter-right">
             <?php get_template_part('/templates/template-part-content'); ?>
