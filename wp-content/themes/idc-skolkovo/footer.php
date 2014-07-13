@@ -1,7 +1,7 @@
 <footer>
     <header>
         <div class="row">
-            <h2><?php _e("Partners", "idc") ?></h2>
+            <h2><?php _e("Partners", "idc-skolkovo") ?></h2>
         </div>
     </header>
     <main>
@@ -34,7 +34,7 @@
                 <img src="<?php echo get_template_directory_uri();?>/assets/img/copyright.png" class="la-copyright" alt="">
             </div>
             <div class="col-sm-6">
-                <address class="la-dev pull-right">Разработана <a href="http://overallsolutions.am/">OverallSolutions.am</a></address>
+                <address class="la-dev pull-right"><?php _e("Powered by", "idc-skolkovo") ?> <a href="http://overallsolutions.am/">OverallSolutions.am</a></address>
             </div>
         </div>
     </footer>

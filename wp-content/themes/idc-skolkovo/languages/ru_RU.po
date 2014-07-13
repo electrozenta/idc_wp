@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: IDC-Skolkovo\n"
-"POT-Creation-Date: 2014-07-14 01:45+0400\n"
-"PO-Revision-Date: 2014-07-14 01:48+0400\n"
+"POT-Creation-Date: 2014-07-14 02:51+0400\n"
+"PO-Revision-Date: 2014-07-14 02:53+0400\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: ru_RU\n"
@@ -23,6 +23,6 @@ msgstr ""
 msgid "Partners"
 msgstr "Партнеры"
 
-#: templates/template-contact.php:14
-msgid "Map"
-msgstr "Карта проезда"
+#: footer.php:37
+msgid "Powered by"
+msgstr "Разработана"
