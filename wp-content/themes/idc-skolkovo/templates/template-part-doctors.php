@@ -23,8 +23,7 @@ if ($values) :
                 <p><?php echo $cfs->get('doc_summary', $post_id); ?></p>
                 <?php if (trim($the_post->post_content) !== '') : ?>
                     <a href="<?php echo "#" . $toggle_id; ?>" data-toggle="collapse">подробнее</a>
-                    <div id="<?php echo $toggle_id; ?>" class="collapse">
-                        <?php echo $the_post->post_content; ?>
+                    <div id="<?php echo $toggle_id; ?>" class="collapse la-bio"><?php echo $the_post->post_content; ?>
                         <a href="<?php echo "#" . $toggle_id; ?>" data-toggle="collapse">назад</a>
                     </div>
                 <?php endif; ?>

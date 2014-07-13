@@ -1,7 +1,7 @@
 <footer>
     <header>
         <div class="row">
-            <h2><?php _e("Партнеры", "partners") ?></h2>
+            <h2><?php _e("Partners", "idc") ?></h2>
         </div>
     </header>
     <main>

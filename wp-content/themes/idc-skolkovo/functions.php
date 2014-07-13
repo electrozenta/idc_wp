@@ -20,20 +20,7 @@ function wp_setup() {
 
     add_image_size( 'doctor thumbnail', 169, 166, array( 'center', 'top' ) );
 
-    //registering widget areas
-
-    if(function_exists('register_sidebar')){
-
-        register_sidebar(array(
-            'name' => 'Footer Menu Widget Area',
-            'id' => 'footer_menu_area',
-            'description' => 'Footer Menu Area',
-            'before_widget' => '<div class="col-xs-6 col-sm-3"><div class="dg-footer-menu">',
-            'after_widget' => '</div></div>',
-            'before_title' => '<h3>',
-            'after_title' => '</h3>',
-        ));
-    }
+    load_theme_textdomain('idc-skolkovo', get_template_directory() . '/languages');
 
 }
 
@@ -218,7 +205,7 @@ function wpml_lang_list(){
         foreach($languages as $l){
             echo $sep.'<li class="navbar-link">';
             if(!$l['active']) echo '<a href="'.$l['url'].'">';
-            echo $l['language_code'];
+            echo $l['native_name'];
             if(!$l['active']) echo '</a>';
             echo '</li>';
             $sep = '<li><span>|</span></li>';

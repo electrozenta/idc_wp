@@ -382,6 +382,33 @@ main > footer .nav.navbar-nav > li > a:hover {
     padding: 20px 20px 0 0;
     color: #8f8e8e;
     font-size: 16px;
+    white-space: pre-wrap;
+}
+
+.la-doctor-short .la-bio {
+    font-weight: normal;
+    padding: 20px 20px 0px 0px;
+    color: #8f8e8e;
+    font-size: 16px;
+    white-space: pre-wrap;
+    line-height: 20px;
+    height: 20px;
+}
+
+.la-doctor-short .la-bio strong {
+    color: #555555;
+}
+
+.la-doctor-short .la-bio ul {
+    padding-left: 0;
+    list-style-type: none;
+    white-space: normal;
+}
+
+.la-doctor-short .la-bio ul > li {
+    background-image: url(assets/img/list-bio.png);
+    background-repeat: no-repeat;
+    padding-left: 50px;
 }
 
 .la-doctor-short a {
