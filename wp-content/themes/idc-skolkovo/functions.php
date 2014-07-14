@@ -188,7 +188,7 @@ function partners_init() {
         'hierarchical'       => false,
         'menu_position'      => null,
         'menu_icon'          => 'dashicons-awards',
-        'supports'           => array( 'title', 'thumbnail'),
+        'supports'           => array( 'title', 'thumbnail', 'page-attributes'),
         //'taxonomies'         => array( 'category', 'post_tag' )
     );
 

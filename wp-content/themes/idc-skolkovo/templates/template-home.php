@@ -8,22 +8,31 @@ Description: The main page
 <?php get_header(); ?>
 
 <main>
-    <header>
-        <div id="owl-idc" class="owl-carousel owl-theme hidden-xs">
-            <div class="item">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/header-1.jpg" alt=""
-                     class="img-responsive">
 
-                <h2>Клиника</h2>
-            </div>
-            <div class="item">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/header-2.jpg" alt=""
-                     class="img-responsive">
+    <?php
 
-                <h2>Учебный Центр</h2>
+    $slides = $cfs->get('slides');
+    if (slides) {
+        ?>
+        <header>
+            <div id="owl-idc" class="owl-carousel owl-theme hidden-xs">
+                <?php
+                foreach ($slides as $slide) {
+                    ?>
+                    <div class="item">
+                        <img src="<?php echo $slide['slide_image']; ?>" class="img-responsive">
+
+                        <h2><?php echo $slide['slide_title']; ?></h2>
+                    </div>
+                <?php
+                }
+                ?>
             </div>
-        </div>
-    </header>
+        </header>
+    <?php
+    }
+    ?>
+
     <article>
         <?php
         get_template_part('/templates/template-part-content');
