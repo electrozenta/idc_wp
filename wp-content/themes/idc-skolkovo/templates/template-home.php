@@ -51,7 +51,7 @@ Description: The main page
                 $alt = get_post_meta($post_thumbnail_id, '_wp_attachment_image_alt', true);
 
                 if (has_post_thumbnail($page->ID)) : ?>
-                    <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 la-page">
+                    <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3 la-page">
                         <a href="<?php echo get_page_link($page->ID); ?>">
                             <img class="img-responsive" src="<?php echo $attachment_url; ?>"
                                  alt="<?php if (count($alt)) echo $alt; ?>"/>

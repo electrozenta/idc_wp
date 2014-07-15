@@ -16,8 +16,8 @@
     zoom: 1;
     *display: inline;/*IE7 life-saver */
     position: absolute;
-    margin: 5px;
-    padding: 3px 10px;
+    /*margin: 5px;*/
+    /*padding: 3px 10px;*/
     font-size: 20px;
     -webkit-border-radius: 30px;
     -moz-border-radius: 30px;
@@ -30,7 +30,7 @@
 .owl-next {
     position: absolute;
     top: 45%;
-    right: -45px;
+    right: -40px;
 }
 
 .owl-prev {

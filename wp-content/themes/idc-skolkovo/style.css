@@ -63,6 +63,10 @@ address {
     margin-top: 20px;
 }
 
+.nav-justified > li  a {
+    text-align: left;
+}
+
 .navbar-header {
     margin-left: -15px;
 }
@@ -90,6 +94,10 @@ td:last-child {
     ul.navbar-nav > li {
         float: none;
         display: table-cell;
+        text-align: center;
+    }
+
+    .nav-justified>li>a {
         text-align: center;
     }
 }
@@ -255,7 +263,7 @@ main article {
 
 main article > p {
     color: #555555;
-    font-size: 20px;
+    font-size: 15px;
     text-align: center;
 }
 
@@ -523,6 +531,12 @@ a[title="|"] {
         font-size: 12px;
     }
 
+    main article > p {
+        color: #555555;
+        font-size: 20px;
+        text-align: center;
+    }
+
 }
 
 /* Medium devices (desktops, 992px and up) */
@@ -600,4 +614,12 @@ a[title="|"] {
 
 .priyom_btn:hover {
     text-decoration: none !important;
+}
+
+#owl-idc-footer .owl-prev {
+    left: 0;
+}
+
+#owl-idc-footer .owl-next {
+    right: 0;
 }
