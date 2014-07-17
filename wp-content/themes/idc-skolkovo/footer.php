@@ -69,9 +69,11 @@
         jQuery(document).ready(function () {
 
             $("#owl-idc-footer").owlCarousel({
+                autoPlay: 3000,
+                stopOnHover: true,
                 navigation: true,
                 pagination: false,
-                paginationSpeed: 1000,
+                paginationSpeed: 2000,
                 slideSpeed: 1000,
                 goToFirstSpeed: 1000,
                 items : 3,

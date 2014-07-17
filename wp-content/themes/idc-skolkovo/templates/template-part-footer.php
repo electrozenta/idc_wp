@@ -7,7 +7,7 @@
             'depth'             => 0,
             'container'         => 'div',
             'container_class'   => 'row',
-            'menu_class'        => 'list-inline text-center la-footer-nav',
+            'menu_class'        => 'list-inline text-center la-footer-nav hidden-xs',
             'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
             'walker'            => new wp_bootstrap_navwalker())
     );

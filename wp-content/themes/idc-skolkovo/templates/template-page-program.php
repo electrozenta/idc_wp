@@ -33,13 +33,11 @@ get_template_part('/templates/template-part-header');
             <?php get_template_part('/templates/template-part-content'); ?>
             <?php if($cfs->get('hide_calendar') == 0) : ?>
             <div class="row">
-                <div class="col-sm-4">
-                    <a href="#">
-                        <img class="img-responsive text-center" src="<?php echo get_template_directory_uri();?>/assets/img/educational_programs.jpg" alt=""/>
-                    </a>
+                <div class="col-sm-6">
+                    <div class="la-book"></div>
                     <?php echo do_shortcode('[contact-form-7 id="355" title="Скачать"]'); ?>
                 </div>
-                <div class="col-sm-8 no-gutter">
+                <div class="col-sm-6 no-gutter">
                     <div id="eventCalendarDefault"></div>
                 </div>
             </div>

@@ -315,9 +315,7 @@ main > footer .nav.navbar-nav > li > a:hover {
 
 .la-nav-skew {
     background-color: #efefef;
-    -webkit-transform: skewY(-10deg);
-    -webkit-transform-origin: right top;
-    margin: 10px 0 23%;
+    margin: 10px 0;
 }
 
 .la-nav-skew:before {
@@ -329,16 +327,51 @@ main > footer .nav.navbar-nav > li > a:hover {
 }
 
 .la-nav-vertical {
-    margin: 15% 0 0;
-    -webkit-transform: skewY(10deg);
-    -webkit-transform-origin: right top;
     display: inline-block;
     width: 100%;
 }
 
 .la-nav-vertical > li {
-    padding: 15px 25px;
+    padding: 5px 10px;
 }
+
+@media (min-width: 768px) {
+    .la-nav-vertical {
+        margin: 15% 0 0;
+        -webkit-transform:skewY(10deg);
+        -moz-transform:skewY(10deg);
+        -ms-transform:skewY(10deg);
+        -o-transform:skewY(10deg);
+        transform:skewY(10deg);
+        -webkit-transform-origin:right top;
+        -moz-transform-origin:right top;
+        -ms-transform-origin:right top;
+        -o-transform-origin:right top;
+        transform-origin:right top;
+        display: inline-block;
+        width: 100%;
+    }
+
+    .la-nav-skew {
+        -webkit-transform:skewY(-10deg);
+        -moz-transform:skewY(-10deg);
+        -ms-transform:skewY(-10deg);
+        -o-transform:skewY(-10deg);
+        transform:skewY(-10deg);
+        -webkit-transform-origin:right top;
+        -moz-transform-origin:right top;
+        -ms-transform-origin:right top;
+        -o-transform-origin:right top;
+        transform-origin:right top;
+        margin: 10px 0 23%;
+    }
+
+    .la-nav-vertical > li {
+        padding: 15px 25px;
+    }
+}
+
+
 
 .la-nav-vertical > li + li {
     border-top: 1px solid #cdcdcd;
@@ -539,6 +572,12 @@ a[title="|"] {
 
 }
 
+.la-book {
+    background: url(assets/img/educational_programs.jpg) no-repeat;
+    height: 298px;
+    background-position-x: 50%;
+}
+
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
 
@@ -597,11 +636,21 @@ a[title="|"] {
 
 /*pullout form*/
 .pullout-button span, .pullout-button .icon {
-    -webkit-transform: rotate(180deg);
+    -webkit-transform:rotate(180deg);
+    -moz-transform:rotate(180deg);
+    -ms-transform:rotate(180deg);
+    -o-transform:rotate(180deg);
+    transform:rotate(180deg);
 }
 
 .pullout-button .icon {
     float: left;
+}
+
+@media (min-width: 768px) {
+    body {
+        padding-right: 20px;
+    }
 }
 
 .services-list ul li {
