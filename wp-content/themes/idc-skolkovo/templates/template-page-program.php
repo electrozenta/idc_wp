@@ -50,30 +50,7 @@ get_template_part('/templates/template-part-header');
 get_template_part('/templates/template-part-footer');
 ?>
     <script>
-        (function ($) {
-            jQuery(document).ready(function () {
-
-                $("#eventCalendarDefault").eventCalendar({
-                    eventsjson: '<?php echo get_template_directory_uri();?>/templates/events.json.php',
-                    monthNames: [ "Январь", "Февраль", "Март", "Апрель", "Май", "Июнь",
-                        "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь" ],
-                    dayNames: [ 'Воскресенье','Понедельник','Вторник','Среда',
-                        'Четверг','Пятница','Суббота' ],
-                    dayNamesShort: [ 'Вс','Пн','Вт','Ср', 'Чт','Пт','Сб' ],
-                    txt_noEvents: "Нет трейнингов",
-                    txt_SpecificEvents_prev: "",
-                    txt_SpecificEvents_after: "трейнинги:",
-                    txt_next: "след.",
-                    txt_prev: "пред.",
-                    txt_NextEvents: "Образавательные программы:",
-                    txt_GoToEventUrl: "посмотреть трейнинг",
-                    showDescription: true,
-                    openEventInNewWindow: true,
-                    jsonDateFormat: 'human'
-                });
-
-            });
-        })(jQuery)
+        var templateDirectory = "<?php echo get_template_directory_uri();?>";
 
         function download() {
             window.location = "<?php echo $cfs->get('download_url'); ?>";

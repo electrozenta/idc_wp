@@ -63,32 +63,7 @@
 
 </div>
 <!-- /container -->
+
 <?php wp_footer(); ?>
-<script>
-    (function ($) {
-        jQuery(document).ready(function () {
-
-            $("#owl-idc-footer").owlCarousel({
-                autoPlay: 3000,
-                stopOnHover: true,
-                navigation: true,
-                pagination: false,
-                paginationSpeed: 2000,
-                slideSpeed: 1000,
-                goToFirstSpeed: 1000,
-                items : 3,
-                itemsDesktop : [1200,3],
-                itemsDesktopSmall : [992,3],
-                itemsTablet: [768,2],
-                itemsMobile : [480,1],
-                navigationText: [
-                    '<span class="glyphicon glyphicon-chevron-left"></span>',
-                    '<span class="glyphicon glyphicon-chevron-right"></span>']
-
-            });
-
-        });
-    })(jQuery)
-</script>
 </body>
 </html>

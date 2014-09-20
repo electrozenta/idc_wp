@@ -18,11 +18,15 @@ Description: The main page
             <div id="owl-idc" class="owl-carousel owl-theme hidden-xs">
                 <?php
                 foreach ($slides as $slide) {
+                    $text = $slide['slide_title'];
                     ?>
                     <div class="item">
                         <img src="<?php echo $slide['slide_image']; ?>" class="img-responsive">
-
-                        <h2><?php echo $slide['slide_title']; ?></h2>
+                        <?php
+                        if(trim($text)) {
+                            printf('<h2>%s</h2>', $text);
+                        }
+                        ?>
                     </div>
                 <?php
                 }
@@ -67,30 +71,5 @@ Description: The main page
 
     </div>
 </main>
-
-<script>
-    (function ($) {
-        jQuery(document).ready(function () {
-
-            $("#owl-idc").owlCarousel({
-
-                autoPlay: 3000,
-                stopOnHover: true,
-                navigation: true,
-                pagination: false,
-                paginationSpeed: 3000,
-                slideSpeed: 3000,
-                goToFirstSpeed: 3000,
-                singleItem: true,
-                transitionStyle: "fade",
-                navigationText: [
-                    '<span class="glyphicon glyphicon-chevron-left"></span>',
-                    '<span class="glyphicon glyphicon-chevron-right"></span>']
-
-            });
-
-        });
-    })(jQuery)
-</script>
 <?php get_footer(); ?>
 

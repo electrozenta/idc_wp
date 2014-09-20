@@ -58,6 +58,10 @@ function wpt_register_js()
     /* Load jQuery Event Calendar Plugin with dependencies in footer*/
     wp_register_script('jquery.eventCalendar.min.js', get_template_directory_uri() . '/assets/js/jquery.eventCalendar.js', array('jquery'), '1.0', true);
     wp_enqueue_script('jquery.eventCalendar.min.js');
+
+    /* Load idc script with dependencies in footer*/
+    wp_register_script('idc.js', get_template_directory_uri() . '/assets/js/idc.js', array('jquery'), '1.0', true);
+    wp_enqueue_script('idc.js');
 }
 
 add_action('init', 'wpt_register_js');
