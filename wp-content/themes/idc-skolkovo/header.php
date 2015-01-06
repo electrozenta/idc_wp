@@ -39,7 +39,7 @@
                 <div class="navbar-collapse collapse no-gutter">
                     <div class="row">
                         <a href="<?php echo home_url('/'); ?>" class="la-home pull-left"></a>
-                        <a href="#" class="la-facebook pull-right"></a>
+                        <a href="https://www.facebook.com/idcskolkovo/" class="la-facebook pull-right"></a>
                         <div class="la-contact pull-right">
                             <address class="la-phone">+7(495) 545-54-05</address>
                             <a href="mailto:idc@idc-skolkovo.com" class="la-email">idc@idc-skolkovo.com</a>
